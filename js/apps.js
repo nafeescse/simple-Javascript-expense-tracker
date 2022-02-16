@@ -44,12 +44,10 @@ calcButton.addEventListener('click', function(){
     const incomeTotal = Number(getInput(income));
     balance.innerText = incomeTotal - total;
     if(savingAmount.innerText > balance.innerText){
-        window.alert('Savings cant be bigger than income');
+        window.alert('Savings cant be bigger than balance');
     }else{
     remainingBalance.innerText = balance.innerText - savingAmount.innerText;
     }
-
-
     console.log('total', remainingBalance.innerText);
 });
 
